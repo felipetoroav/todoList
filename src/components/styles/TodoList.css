@@ -1,0 +1,22 @@
+.todoList {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.todoList ul {
+  width: 80%;
+}
+
+.todoList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  border: solid rgb(0, 38, 46) 1px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
