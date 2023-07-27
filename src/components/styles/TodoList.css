@@ -9,12 +9,19 @@
   width: 80%;
 }
 
+.todoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+}
+
 .todoList li {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   padding: 8px;
   border: solid rgb(0, 38, 46) 1px;
   border-radius: 4px;

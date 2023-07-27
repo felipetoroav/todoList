@@ -4,8 +4,10 @@ const TodoItem = ({ todoText, todoCompleted }) => {
   return (
     <>
       <li>
-        <span>V</span>
-        <p>{todoText}</p>
+        <div className="todoContainer">
+          <span>V</span>
+          <p>{todoText}</p>
+        </div>
         <span>X</span>
       </li>
     </>
