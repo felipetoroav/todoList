@@ -1,10 +1,21 @@
 import React from 'react';
 import './styles/TodoSerch.css'
 
-const TodoSerch = () => {
+const TodoSerch = ({
+  serchValue,
+  setSerchValue
+}) => {
+
   return (
     <>
-      <input className="serchTodo" placeholder="Buscar TODO..." />
+      <input
+        className="serchTodo"
+        placeholder="Buscar TODO..."
+        value={serchValue}
+        onChange={(event) => {
+          setSerchValue(event.target.value)
+        }}
+      />
     </>
   );
 };

@@ -1,0 +1,21 @@
+.todoContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.checkBox-todo {
+  font-weight: bold;
+}
+
+.text-todo {
+  color: black;
+}
+
+.delete-todo {
+  color: blueviolet;
+}
+
+.delete-todo:hover {
+  color: aqua;
+}
