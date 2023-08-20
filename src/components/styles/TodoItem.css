@@ -5,17 +5,36 @@
 }
 
 .checkBox-todo {
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.checkBox-todo--completed {
+  color: green;
+}
+
+.checkBox-todo:hover {
+  cursor: pointer;
 }
 
 .text-todo {
   color: black;
 }
 
+.TodoItem-p--completed {
+  text-decoration: line-through;
+}
+
 .delete-todo {
-  color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: gray;
 }
 
 .delete-todo:hover {
-  color: aqua;
+  color: red;
 }

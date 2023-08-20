@@ -1,17 +1,29 @@
 import React from 'react';
 import "./styles/TodoItem.css"
+import { CiCircleRemove, CiCircleCheck } from 'react-icons/ci';
 
-const TodoItem = ({ todoText, todoCompleted }) => {
+const TodoItem = (props) => {
   return (
     <>
       <li>
         <div className="todoContainer">
-          <label className="checkBox-todo">
-            <input type="checkbox" name="checkbox" />
-          </label>
-          <p className='text-todo'>{todoText}</p>
+          <span
+            className={`checkBox-todo ${props.completed && "checkBox-todo--completed"}`}
+
+            onClick={props.onComplete}
+          >
+
+            <CiCircleCheck />
+          </span>
+          <p className={`text-todo ${props.completed && "TodoItem-p--completed"}`}>
+            {props.todoText}
+          </p>
         </div>
-        <span className='delete-todo'>X</span>
+        <span className='delete-todo'
+          onClick={props.onDelete}
+        >
+          <CiCircleRemove />
+        </span>
       </li>
     </>
   );
